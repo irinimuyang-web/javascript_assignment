@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weight converter</title>
+    <h1>converter</h1>
+</head>
+<body>
+    <input type="number" id="grams" placeholder="enter grams">
+    <button onclick="convert()">convert</button>
+    <p id="result"></p>
+    <script>
+        function convert(){
+            let g=document.getElementById("grams").value;
+            document.getElementById("result").innerHTML=(g/1000)+"kg";
+        }
+    </script>
+    
+</body>
+</html>
